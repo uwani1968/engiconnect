@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EngiConnect - Connecting Engineers, Empowering Technicians</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --blue-color: #0062cc;
+            --orange-color: #ffa500;
+            --dark-blue: #1e3a5c;
+        }
+        .logo-blue {
+            color: #0062cc;
+        }
+        .logo-orange {
+            color: #ffa500;
+        }
+        .blue-button {
+            background-color: var(--blue-color);
+            color: white;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-weight: 500;
+        }
+        .orange-button {
+            background-color: var(--orange-color);
+            color: white;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-weight: 500;
+        }
+        .blue-bg {
+            background-color: var(--blue-color);
+        }
+        .dark-blue-bg {
+            background-color: var(--dark-blue);
+            color: white;
+        }
+        .step-circle {
+            background-color: var(--blue-color);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .testimonial-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #777;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="border-b">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">
+                <span class="logo-blue">Engi</span><span class="logo-orange">Connect</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-700">Features</a>
+                <a href="#how-it-works" class="text-gray-700">How It Works</a>
+                <a href="#impact" class="text-gray-700">Impact</a>
+                <a href="#pricing" class="text-gray-700">Pricing</a>
+            </nav>
+            <a href="#" class="blue-button">Login</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Connecting Engineers. Empowering Technicians.</h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
+                EngiConnect bridges the knowledge gap between junior electrical technicians and expert engineers through real-time video support, preventing accidents and saving lives in Nigeria.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#" class="blue-button px-8 py-3">Subscribe as Technician</a>
+                <a href="#" class="orange-button px-8 py-3">Join as Expert</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why EngiConnect Matters -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Why EngiConnect Matters</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Our platform provides critical support for electrical technicians across Nigeria, particularly in underserved regions like Yobe State.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-200 p-8 rounded">
+                    <div class="flex justify-center">
+                        <img src="/api/placeholder/400/200" alt="Preventing Accidents" class="mb-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Preventing Accidents</h3>
+                    <p class="text-gray-600">
+                        Reduce electrical fires and electrocutions through expert supervision and safety checks.
+                    </p>
+                </div>
+                <div class="bg-gray-200 p-8 rounded">
+                    <div class="flex justify-center">
+                        <img src="/api/placeholder/400/200" alt="Skill Development" class="mb-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Skill Development</h3>
+                    <p class="text-gray-600">
+                        Empower young technicians to build real skills under qualified supervision.
+                    </p>
+                </div>
+                <div class="bg-gray-200 p-8 rounded">
+                    <div class="flex justify-center">
+                        <img src="/api/placeholder/400/200" alt="Bridging Gaps" class="mb-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Bridging Gaps</h3>
+                    <p class="text-gray-600">
+                        Connect remote communities with experienced engineers from across Nigeria.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How EngiConnect Works -->
+    <section id="how-it-works" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">How EngiConnect Works</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                A simple process that connects technicians with the expertise they need, when they need it most.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="border p-6 rounded">
+                    <div class="flex justify-center mb-4">
+                        <div class="step-circle">1</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Subscribe</h3>
+                    <p class="text-gray-600">
+                        Technicians sign up for affordable monthly access to the platform.
+                    </p>
+                </div>
+                <div class="border p-6 rounded">
+                    <div class="flex justify-center mb-4">
+                        <div class="step-circle">2</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Request Help</h3>
+                    <p class="text-gray-600">
+                        When facing challenges on-site, log in and request live support from available experts.
+                    </p>
+                </div>
+                <div class="border p-6 rounded">
+                    <div class="flex justify-center mb-4">
+                        <div class="step-circle">3</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Get Guidance</h3>
+                    <p class="text-gray-600">
+                        Receive real-time video/audio guidance on wiring layouts, safety checks, and troubleshooting.
+                    </p>
+                </div>
+                <div class="border p-6 rounded">
+                    <div class="flex justify-center mb-4">
+                        <div class="step-circle">4</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Build Skills</h3>
+                    <p class="text-gray-600">
+                        Learn from each interaction and access training videos to improve your expertise.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories -->
+    <section id="impact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Impact Stories</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Hear from technicians and communities who have benefited from expert guidance through EngiConnect.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-8 rounded">
+                    <p class="text-gray-600 italic mb-6">
+                        "EngiConnect helped me avoid a potentially dangerous mistake during a complex installation. The engineer spotted an issue I would have missed and guided me through the proper procedure."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="testimonial-circle mr-4">JO</div>
+                        <div class="text-left">
+                            <p class="font-bold">Joseph Okafor</p>
+                            <p class="text-sm text-gray-500">Apprentice Electrician, Damaturu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-8 rounded">
+                    <p class="text-gray-600 italic mb-6">
+                        "After years of retirement, I can now share my knowledge with young technicians across Nigeria. It's fulfilling to know I'm helping prevent accidents while earning extra income."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="testimonial-circle mr-4">AI</div>
+                        <div class="text-left">
+                            <p class="font-bold">Auwalu Ibrahim</p>
+                            <p class="text-sm text-gray-500">Founder, EngiConnect</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-8 rounded">
+                    <p class="text-gray-600 italic mb-6">
+                        "Our hospital had recurring electrical issues that were causing equipment failures. Through EngiConnect, our maintenance staff received proper guidance to fix the root causes, not just the symptoms."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="testimonial-circle mr-4">FH</div>
+                        <div class="text-left">
+                            <p class="font-bold">Fatima Hassan</p>
+                            <p class="text-sm text-gray-500">Hospital Administrator, Potiskum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Affordable Access to Expertise</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Our subscription plans are designed to be accessible for technicians at all levels.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border p-8 rounded shadow-sm">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Basic Plan</h3>
+                    <p class="text-xl font-bold text-gray-700 mb-6">₦3,000/month</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Up to 5 expert consultations per month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Access to basic training materials</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Email support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Community forum access</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="blue-button block w-full py-3">Subscribe Now</a>
+                </div>
+                <div class="border p-8 rounded shadow-sm">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Standard Plan</h3>
+                    <p class="text-xl font-bold text-gray-700 mb-6">₦5,000/month</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Unlimited expert consultations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Full access to training library</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Certificate of completion</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="blue-button block w-full py-3">Subscribe Now</a>
+                </div>
+                <div class="border p-8 rounded shadow-sm">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Engineers</h3>
+                    <p class="text-xl font-bold text-gray-700 mb-6">Free to Join</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Earn income for each consultation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Set your own availability</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Build your profile and reputation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-600 mr-2">•</span>
+                            <span>Make a difference in your community</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="orange-button block w-full py-3">Join as Expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 blue-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Make Electrical Work Safer in Nigeria?</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">
+                Join EngiConnect today and be part of a movement to improve electrical safety standards and empower the next generation of technicians.
+            </p>
+            <a href="#" class="bg-white text-blue-600 font-bold py-3 px-8 rounded inline-block">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="dark-blue-bg py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-orange-400 mb-4">EngiConnect</h3>
+                    <p class="text-gray-300 mb-4">
+                        Real-time support platform connecting electrical technicians with certified engineers.
+                    </p>
+                    <p class="text-gray-300">
+                        Founded by Auwalu Ibrahim to prevent electrical accidents and empower young technicians in Nigeria.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-orange-400 mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">How It Works</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Impact Stories</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-orange-400 mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Training Videos</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Safety Guidelines</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-orange-400 mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">Yobe State, Nigeria</li>
+                        <li><a href="mailto:info@engiconnect.ng" class="text-gray-300 hover:text-white">info@engiconnect.ng</a></li>
+                        <li class="text-gray-300">+234 800 ENGI CONNECT</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>© 2025 EngiConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
